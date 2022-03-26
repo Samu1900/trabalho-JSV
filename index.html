@@ -1,24 +1,245 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Link Material icons.io-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
-    <!--Container de elementos do site-->
-    <div id="content">
-        <!--Chamada do icone expandir mais-->
+
+    <!--                         Menu                                       -->
+   <header>
+       <a href="#" class="logo">J<spam>S</spam>V <spam>W</spam>eb</a>
+       <ul class="navigation">
+
+            <li><a href=""></a>Refecias</li>
+            <li><a href=""></a>Guides</li>
+            <li><a href=""></a>Sobre Nós</li>
+
+       </ul><!--navegation-->
+   </header>
+
+ <!------------------------------------Gramatica------------------------------------------->  
+   <section class="gramatica" id="gramatica">
+        <div class="content">
+            <h2><span>G</span>ramática léxica</h2>
+            <p>Esta página descreve a gramática léxica da linguagem JavaScript. O código fonte de um script ECMAScript é lido da esquerda para direita e traduzido em uma sequência de elementos de entrada, como símbolos, caracteres de controle, finalizadores de linha, comentários ou espaços em branco. ECMAScript também define certas palavras-chave e literais e possui regras para inserção automática de ponto e vírgula ao final de declarações.</p>
+        </div><!--content-->
+   </section>
+
+<!------------------------------------Caracteres-------------------------------------------->
+<section class="caracter" id="caracteres">
+
+    <div class="content">
+        <h2><span>C</span>aracteres <span>D</span>e <span>C</span>ontrole</h2>
+        <p> Caracteres de controle não possuem representação visual, mas são usados para controlar a interpretação do código.</p>
+   
+        
+           
+        <div class="textTable">
+            <span style="font-size:40px" class="material-icons">expand_more</span>
+
+            <table  class="table" id="expandir">
+
+             
+                <h2>Caracteres de controle Unicode</h2>
+                
+
+                <thead>
+
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Abreviação</th>
+                        <th>Descrição</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>U+200C</td>  
+                        <td>Zero width non-joiner</td>
+                        <td>ZWNJ</td>
+                        <td>Colocado entre caracteres para evitar  que sejam visualmente ligados (fundidos) em algumas linguagens <a href="http://en.wikipedia.org/wiki/Zero-width_non-joiner">(Wikipedia)</a>.</td>
+                    </tr>
+              
+                    <tr>
+                        <td>U+200D</td>
+                        <td>Zero width joiner</td>
+                        <td> ZWJ </td>
+                        <td>Colocado entre caracteres que podem não estar normalmente conectados, para que estes caracteres sejam renderizados com suas devidas ligações em certas linguagens <a href="http://en.wikipedia.org/wiki/Zero-width_joiner">(Wikipedia)</a>.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>U+FEFF</td>
+                        <td>Byte order mark</td>
+                        <td> BOM </td>
+                        <td>Usado no início do script para marcá-lo como Unicode e especificar a ordem de bytes do código <a href="https://en.wikipedia.org/wiki/Byte_order_mark">(Wikipedia)</a>.</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div><!--textTable-->
+    </div><!--content-->  
+</section>
+
+
+<!------------------------------------Espaço-------------------------------------------->
+
+<section class="espaço" id="Espaço">
+    <div class="content">
+        <h2><span>E</span>spaço<span>E</span>m <span>B</span>ranco</h2>
+        <p>Espaços em branco ajudam na legibilidade do código e separam os símbolos um do outro.  Estes caracteres normalmente não são funcionais no código. <a href="https://en.wikipedia.org/wiki/Minification_%28programming%29">Ferramentas de minificação</a> podem ser usadas para remover espaços em branco do código reduzindo, assim, a quantidade de dados que precisam ser transferidos.</p>
+   
+        
+        
+
+
+
+        <table  class="table">
+        
+                <thead>
+
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Abreviação</th>
+                        <th>Descrição</th>
+                        <th>Sequência de escape</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>U+0009</td>  
+                        <td>Character tabulation</td>
+                        <td>HT</td>
+                        <td>Tabulação horizontal</td>
+                        <td>\t</td>
+                    </tr>
+              
+                    <tr>
+                        <td>U+000B</td>
+                        <td>Line tabulation</td>
+                        <td> VT </td>
+                        <td>Tabulação vertical</td>
+                        <td>\v</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>U+000C</td>
+                        <td>Form feed</td>
+                        <td> FF </td>
+                        <td>Pular para próxima página <a href="http://en.wikipedia.org/wiki/Page_break#Form_feed">(Wikipedia)</a>.</td>
+                        <td>\f</td>
+                    </tr>
+
+                    <tr>
+                        <td>U+0020</td>  
+                        <td>Space</td>
+                        <td>SP</td>
+                        <td>Espaço normal</td>
+                        <td></td>
+                    </tr>
+              
+                    <tr>
+                        <td>U+00A0</td>
+                        <td>No-break space</td>
+                        <td> NBSP </td>
+                        <td>Espaço normal, sem marcar quebra de linha</td>
+                        <td></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Others</td>
+                        <td>Other Unicode space characters</td>
+                        <td> USP </td>
+                        <td><a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Outros tipos de espaço. Veja na Wikipedia</a>.</td>
+                        <td></td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div><!--textTable-->
+    </div><!--content-->  
+</section>
+
+<!------------------------------------Espaço-------------------------------------------->
+
+<section class="finalizador" id="finalizador">
+
+    <div class="content">
+        <h2><span>F</span>inalizadores <span>D</span>e <span>L</span>inha</h2>
+        <p>Além dos caracteres de espaço em branco, caracteres finalizadores de linha são usados  para melhorar a legibilidade do código. Contudo, em alguns casos, finalizadores de linha podem influenciar a execução do código JavaScript, por isso você não poderá usá-los em alguns casos. Eles também afetam o <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Lexical_grammar$edit#Automatic_semicolon_insertion">processo automático de inserção de ponto e vírgula</a>. Em <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">expressões regulares</a> os finalizadores de linha podem ser indicados com a classe \s.<br>
+           
+           
+        <br>Apenas os seguintes códigos Unicode são tratados como finalizadores de linha no ECMAScript, outros caracteres de quebra de linha são tratados apenas como espaço em branco (por exemplo, Next Line, NEL, U+0085 são considerados espaço em branco).</p>
+   
         <span class="material-icons">expand_more</span>
+        <table  class="table" id="expandir">
+            
+            
+                <thead>
 
-        <!--Bloco para expandir-->
-        <div id="expandir">
-        </div>
-    </div>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Abreviação</th>
+                        <th>Descrição</th>
+                        <th>Sequência de escape</th>
+                    </tr>
 
-    <script src="script.js"></script>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>U+000A</td>  
+                        <td>Line Feed</td>
+                        <td>LF</td>
+                        <td>Caractere de nova linha em sistemas UNIX.</td>
+                        <td>\n</td>
+                    </tr>
+              
+                    <tr>
+                        <td>U+000D</td>
+                        <td>Carriage Return</td>
+                        <td> CR </td>
+                        <td>Caractere de nova linha nos sistemas Commodore e nos primeiros Mac's.</td>
+                        <td>\r</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>U+2028</td>
+                        <td>Line Separator</td>
+                        <td> LS </td>
+                        <td><a href="http://en.wikipedia.org/wiki/Newline">(Wikipedia)</a></td>
+                        <td></td>
+                    </tr>
+    
+                    <tr>
+                        <td>U+2029</td>
+                        <td>Paragraph Separator</td>
+                        <td> PS </td>
+                        <td><a href="http://en.wikipedia.org/wiki/Newline">(Wikipedia)</a></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div><!--textTable-->
+    </div><!--content-->  
+</section>
+
+
+<script src="java.js"></script>
 </body>
-
 </html>
