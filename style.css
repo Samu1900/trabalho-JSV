@@ -1,0 +1,42 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+
+span:nth-child(1) {
+    font-size: 30pt;
+    color: #fff;
+}
+
+span:nth-child(1):hover {
+    cursor: pointer;
+}
+
+#expandir {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
